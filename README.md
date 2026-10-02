@@ -1,8 +1,7 @@
 # Simulation and all-hypothesis metrics 
 
-These are companion scripts that generate the data used for the paper. Major analysis function live in the R package **scSampleSim** ([epurdom/scSampleSim](https://github.com/epurdom/scSampleSim)). These scripts **install and load git tag** `scSampleSim-20260910`. They then make calls using SLURM to this analysis package to simulate scRNA-seq data with known DE structure, extract per-simulation master tables, and compute cluster-level and  experiment level metrics (FDP / power / imbalance).
-
-Analysis functions live 
+These are companion scripts that generate the data used for the paper "“Double-dipping” in testing for phenotypic differences with
+scRNA-Seq" by Nicolas Sanchez, Lucas Etourneau, and Elizabeth Purdom. Major analysis functions live in the R package **scSampleSim** ([epurdom/scSampleSim](https://github.com/epurdom/scSampleSim)). The scripts in this package **install and load git tag** `scSampleSim-20260910`, i.e. a specific version of that R package, and make calls using SLURM. The scripts in this repos generate simulated data with known DE structure (using the functions in the `scSampleSim` package), extract per-simulation master tables, and compute cluster-level and  experiment level metrics (FDP / power / imbalance).
 
 ## Software
 
@@ -14,7 +13,7 @@ Optional: `export R_SCRIPT=/path/to/Rscript` if `Rscript` is not on `PATH`. Do n
 
 ## Input data
 
-The SCE object is not pushed. It is assumed to be placed at:
+The input SCE object used to guide the simulations is not pushed. It is assumed to be placed at:
 
 ```text
 simulation_scripts/data/filtered_sce_data.Rda
