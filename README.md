@@ -1,7 +1,7 @@
 # Simulation and all-hypothesis metrics 
 
 These are companion scripts that generate the simulated data used for the paper "“Double-dipping” in testing for phenotypic differences with
-scRNA-Seq" by Nicolas Sanchez, Lucas Etourneau, and Elizabeth Purdom. Major analysis functions live in the R package **scSampleSim** ([epurdom/scSampleSim](https://github.com/epurdom/scSampleSim)). The scripts in this package **install and load git tag** `scSampleSim-20260910`, i.e. a specific version of that R package, and make calls using SLURM. The scripts in this repos generate simulated data with known DE structure (using the functions in the `scSampleSim` package), extract per-simulation master tables, and compute cluster-level and  experiment level metrics (FDP / power / imbalance).
+scRNA-Seq" by Nicolas Sanchez, Lucas Etourneau, and Elizabeth Purdom. Major analysis functions live in the R package **scSampleSim**  housed in the gitrepos [epurdom/scSampleSim](https://github.com/epurdom/scSampleSim) (the package is a companion to this manuscript, not a general-purpose package, and thus is not on CRAN or Bioconductor). The scripts in this package **install and load git tag** `scSampleSim-20260910`, i.e. a specific version of that R package, and make calls using SLURM. The scripts in this repos generate simulated data with known DE structure (using the functions in the `scSampleSim` package), extract per-simulation master tables, and compute cluster-level and  experiment level metrics (FDP / power / imbalance).
 
 ## Software
 
